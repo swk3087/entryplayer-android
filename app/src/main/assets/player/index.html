@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Entry Player</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #111;
+      color: #fff;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+    #app {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    #stage {
+      width: 100%;
+      height: 100%;
+      background: #222;
+    }
+    #overlayMsg {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(0,0,0,.5);
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <div id="stage"></div>
+  <div id="overlayMsg">프로젝트 대기 중</div>
+</div>
+<!-- EntryJS bundle (placeholder) -->
+<script src="/player/entry/entry.min.js"></script>
+<script src="/player/bridge.js"></script>
+<script src="/player/player.js"></script>
+</body>
+</html>
